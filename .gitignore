@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/htm-x-mvc/.vs
+/htm-x-mvc/htm-x-mvc/bin/Debug/net8.0
+/htm-x-mvc/htm-x-mvc/obj/Debug/net8.0
+/htm-x-mvc/htm-x-mvc/obj
+/htm-x-mvc/htm-x-mvc/Properties
