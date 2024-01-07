@@ -6,33 +6,28 @@
     <h1 class="display-4">Welcome to htm-x-mvc</h1>
     <p>An application about baskets of fruit.</p>
 </div>
-<div class="d-flex flex-row bd-highlight m-3 justify-content-evenly">
 
-    <div class="card bg-light mb-3">
+<div class="d-flex flex-row bd-highlight m-3 justify-content-evenly">
+    <div class="card bg-light mb-3" id="fruitContainer">
         <div class="card-header">Pick fruit!</div>
         <div class="card-body">
-            <div class="text-right" id="fruitContainer">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <button>Apples</button>
-                    <button>Oranges</button>
-                    <button>bananas</button>
-                </div>
+            <div class="d-flex flex-row mb-3">
+                <button hx-post="/addFruit" hx-trigger="click" hx-target="applesInBasketCount" hx-swap="innerHTML">Apples</button>
+                <button hx-post="/addFruit" hx-trigger="click" hx-target="orangesInBasketCount" hx-swap="innerHTML">Oranges</button>
+                <button hx-post="/addFruit" hx-trigger="click" hx-target="bananasInBasketCount" hx-swap="innerHTML">bananas</button>
             </div>
         </div>
     </div>
-
-    <div class="card bg-light mb-3">
+    <div class="card bg-light mb-3" id="fruitBasket">
         <div class="card-header">Fruit basket</div>
         <div class="card-body">
-            <div class="text-right" id="fruitBasketContainer">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">Apples:</div>
-                    <div class="p-2 bd-highlight" id="applesInBasketCount">0</div>
-                    <div class="p-2 bd-highlight">Oranges: </div>
-                    <div class="p-2 bd-highlight" id="orangesInBasketCount">0</div>
-                    <div class="p-2 bd-highlight">Bananas: </div>
-                    <div class="p-2 bd-highlight" id="bananasInBasketCount">0</div>
-                </div>
+            <div class="d-flex flex-row mb-3">
+                <div class="p-2 bd-highlight">Apples:</div>
+                <div class="p-2 bd-highlight" id="applesInBasketCount">0</div>
+                <div class="p-2 bd-highlight">Oranges: </div>
+                <div class="p-2 bd-highlight" id="orangesInBasketCount">0</div>
+                <div class="p-2 bd-highlight">Bananas: </div>
+                <div class="p-2 bd-highlight" id="bananasInBasketCount">0</div>
             </div>
         </div>
     </div>
