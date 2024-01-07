@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+button {
+    min-width: 75px;
+    margin:2px;
+}
+
+ul {
+    list-style: none
+}
+
+card{
+    max-width: auto;
+}
+fruitContainer {
+    margin: 20px;
+    min-width: 300px;
+    background-color: rgb(97, 48,7);
+    background: linear-gradient(16deg, rgba(2,0,36,1) 0%, rgba(97,48,7,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+fruitBasketContainer {
+    margin: 20px;
+    min-width: 300px;
+    background-color: rgb(136, 158,15);
+    background: linear-gradient(342deg, rgba(2,0,36,1) 0%, rgba(136,158,15,1) 35%, rgba(0,212,255,1) 100%);
+}
